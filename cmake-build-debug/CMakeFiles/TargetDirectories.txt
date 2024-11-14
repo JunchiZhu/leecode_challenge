@@ -1,0 +1,3 @@
+/Users/zhujunchi/Desktop/code_with_son/cmake-build-debug/CMakeFiles/code_with_son.dir
+/Users/zhujunchi/Desktop/code_with_son/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/zhujunchi/Desktop/code_with_son/cmake-build-debug/CMakeFiles/rebuild_cache.dir
