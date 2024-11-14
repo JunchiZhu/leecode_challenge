@@ -1,0 +1,4 @@
+# ninja log v5
+1	49	1731550281277505774	build.ninja	4a23fc71b85bdc8d
+0	385	1731550281664762583	CMakeFiles/code_with_son.dir/junchi/main.cpp.o	d8fc9fa2a23fbdbd
+387	419	1731550281700334738	code_with_son	aa28b7cf3ee73632
