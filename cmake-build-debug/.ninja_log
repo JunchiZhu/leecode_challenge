@@ -1,4 +1,25 @@
 # ninja log v5
-1	49	1731550281277505774	build.ninja	4a23fc71b85bdc8d
+0	243	1731620713720469641	CMakeFiles/code_with_son_junchi.dir/junchi/main.cpp.o	3a68941baa49a1c2
+288	323	1731620710037990211	code_with_son_hanfu	1887862123bc2318
+408	440	1731620959258367744	day_one	ecb89d7d399bd819
+0	408	1731620959225641062	CMakeFiles/day_one.dir/junchi/day_one.cpp.o	9c43cd5cea4b5c30
+0	286	1731620710001176823	CMakeFiles/code_with_son_hanfu.dir/hanfu/main.cpp.o	56c178022b69caf4
+243	271	1731620713749862334	code_with_son_junchi	8fb5f5c2b141c7b5
+4	428	1731620656775326562	CMakeFiles/code_with_son.dir/hanfu/main.cpp.o	21ef51bfd9ebf7db
 0	385	1731550281664762583	CMakeFiles/code_with_son.dir/junchi/main.cpp.o	d8fc9fa2a23fbdbd
-387	419	1731550281700334738	code_with_son	aa28b7cf3ee73632
+1	49	1731621636633944533	build.ninja	4a23fc71b85bdc8d
+0	46	1731621636633944533	build.ninja	4a23fc71b85bdc8d
+3	437	1731621637076249524	CMakeFiles/day_one.dir/junchi/day_one.cpp.o	9c43cd5cea4b5c30
+437	469	1731621637109073491	day_one	ecb89d7d399bd819
+4	440	1731622360936456223	CMakeFiles/day_one.dir/junchi/day_one.cpp.o	9c43cd5cea4b5c30
+440	472	1731622360969504941	day_one	ecb89d7d399bd819
+4	440	1731622515863867789	CMakeFiles/day_one.dir/junchi/day_one.cpp.o	9c43cd5cea4b5c30
+440	471	1731622515896239380	day_one	ecb89d7d399bd819
+4	451	1731622614671675702	CMakeFiles/day_one.dir/junchi/day_one.cpp.o	9c43cd5cea4b5c30
+451	481	1731622614702466127	day_one	ecb89d7d399bd819
+4	452	1731622847135991028	CMakeFiles/day_one.dir/junchi/day_one.cpp.o	9c43cd5cea4b5c30
+452	484	1731622847168539404	day_one	ecb89d7d399bd819
+4	340	1731622865158866497	CMakeFiles/day_one.dir/junchi/day_one.cpp.o	9c43cd5cea4b5c30
+340	373	1731622865192588050	day_one	ecb89d7d399bd819
+4	257	1731622879095254817	CMakeFiles/day_one.dir/junchi/day_one.cpp.o	9c43cd5cea4b5c30
+257	284	1731622879124034076	day_one	ecb89d7d399bd819

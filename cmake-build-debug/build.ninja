@@ -41,35 +41,97 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = /Users/zhujunchi/Desktop/code_with_son/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target code_with_son
+# Object build statements for EXECUTABLE target code_with_son_hanfu
 
 
 #############################################
-# Order-only phony target for code_with_son
+# Order-only phony target for code_with_son_hanfu
 
-build cmake_object_order_depends_target_code_with_son: phony || CMakeFiles/code_with_son.dir
+build cmake_object_order_depends_target_code_with_son_hanfu: phony || CMakeFiles/code_with_son_hanfu.dir
 
-build CMakeFiles/code_with_son.dir/junchi/main.cpp.o: CXX_COMPILER__code_with_son_unscanned_Debug /Users/zhujunchi/Desktop/code_with_son/junchi/main.cpp || cmake_object_order_depends_target_code_with_son
-  DEP_FILE = CMakeFiles/code_with_son.dir/junchi/main.cpp.o.d
+build CMakeFiles/code_with_son_hanfu.dir/hanfu/main.cpp.o: CXX_COMPILER__code_with_son_hanfu_unscanned_Debug /Users/zhujunchi/Desktop/code_with_son/hanfu/main.cpp || cmake_object_order_depends_target_code_with_son_hanfu
+  DEP_FILE = CMakeFiles/code_with_son_hanfu.dir/hanfu/main.cpp.o.d
   FLAGS = -g -std=gnu++14 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -fcolor-diagnostics
-  OBJECT_DIR = CMakeFiles/code_with_son.dir
-  OBJECT_FILE_DIR = CMakeFiles/code_with_son.dir/junchi
+  OBJECT_DIR = CMakeFiles/code_with_son_hanfu.dir
+  OBJECT_FILE_DIR = CMakeFiles/code_with_son_hanfu.dir/hanfu
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target code_with_son
+# Link build statements for EXECUTABLE target code_with_son_hanfu
 
 
 #############################################
-# Link the executable code_with_son
+# Link the executable code_with_son_hanfu
 
-build code_with_son: CXX_EXECUTABLE_LINKER__code_with_son_Debug CMakeFiles/code_with_son.dir/junchi/main.cpp.o
+build code_with_son_hanfu: CXX_EXECUTABLE_LINKER__code_with_son_hanfu_Debug CMakeFiles/code_with_son_hanfu.dir/hanfu/main.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk
-  OBJECT_DIR = CMakeFiles/code_with_son.dir
+  OBJECT_DIR = CMakeFiles/code_with_son_hanfu.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = code_with_son
-  TARGET_PDB = code_with_son.dbg
+  TARGET_FILE = code_with_son_hanfu
+  TARGET_PDB = code_with_son_hanfu.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target helper
+
+
+#############################################
+# Order-only phony target for helper
+
+build cmake_object_order_depends_target_helper: phony || CMakeFiles/helper.dir
+
+build CMakeFiles/helper.dir/junchi/helper.cpp.o: CXX_COMPILER__helper_unscanned_Debug /Users/zhujunchi/Desktop/code_with_son/junchi/helper.cpp || cmake_object_order_depends_target_helper
+  DEP_FILE = CMakeFiles/helper.dir/junchi/helper.cpp.o.d
+  FLAGS = -g -std=gnu++14 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/helper.dir
+  OBJECT_FILE_DIR = CMakeFiles/helper.dir/junchi
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target helper
+
+
+#############################################
+# Link the executable helper
+
+build helper: CXX_EXECUTABLE_LINKER__helper_Debug CMakeFiles/helper.dir/junchi/helper.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk
+  OBJECT_DIR = CMakeFiles/helper.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = helper
+  TARGET_PDB = helper.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target day_one
+
+
+#############################################
+# Order-only phony target for day_one
+
+build cmake_object_order_depends_target_day_one: phony || CMakeFiles/day_one.dir
+
+build CMakeFiles/day_one.dir/junchi/day_one.cpp.o: CXX_COMPILER__day_one_unscanned_Debug /Users/zhujunchi/Desktop/code_with_son/junchi/day_one.cpp || cmake_object_order_depends_target_day_one
+  DEP_FILE = CMakeFiles/day_one.dir/junchi/day_one.cpp.o.d
+  FLAGS = -g -std=gnu++14 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/day_one.dir
+  OBJECT_FILE_DIR = CMakeFiles/day_one.dir/junchi
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target day_one
+
+
+#############################################
+# Link the executable day_one
+
+build day_one: CXX_EXECUTABLE_LINKER__day_one_Debug CMakeFiles/day_one.dir/junchi/day_one.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk
+  OBJECT_DIR = CMakeFiles/day_one.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = day_one
+  TARGET_PDB = day_one.dbg
 
 
 #############################################
@@ -105,7 +167,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/zhujunchi/Desktop/code_with_son/cmake-build-debug
 
-build all: phony code_with_son
+build all: phony code_with_son_hanfu helper day_one
 
 # =============================================================================
 # Built-in targets
