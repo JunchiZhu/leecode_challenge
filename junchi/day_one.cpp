@@ -55,7 +55,59 @@ vector<int> sortedSquares(vector<int>& nums) {
 }
 
 int minSubArrayLen(int target, vector<int>& nums) {
+   int answer=INT_MAX;
+   int temp_length=0;
+   int sum=0;
+   int left=0;
+   for(int right=0;right<nums.size();++right){
+       sum+=nums[right];
+       while(sum>=target){
+           temp_length=right-left+1;
+           sum-=nums[left];
+           left+=1;
+           if(temp_length<answer){
+               answer=temp_length;
+           }
+       }
+   }
+   if(answer==INT_MAX){
+       return 0;
+   }
+    return answer;
+}
 
+vector<vector<int>> generateMatrix(int n) {
+    vector<vector<int>> answer(n, vector<int>(n,0));
+    int startx=0,starty=0;
+    int loop=n/2;
+    int count=1;
+    int offset=1;
+    while(loop--){
+        int x=startx,y=starty;
+        for(;y<n-offset;++y){
+            answer[x][y]=count;
+            count+=1;
+        }
+        for(;x<n-offset;++x){
+            answer[x][y]=count;
+            count+=1;
+        }
+        for(;y>starty;--y){
+            answer[x][y]=count;
+            count+=1;
+        }
+        for(;x>startx;--x){
+            answer[x][y]=count;
+            count+=1;
+        }
+        offset+=1;
+        startx+=1;
+        starty+=1;
+    }
+    if(n%2!=0){
+        answer[n/2][n/2]=count;
+    }
+    return answer;
 }
 
 int main(){
