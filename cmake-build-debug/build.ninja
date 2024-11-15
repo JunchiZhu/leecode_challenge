@@ -103,6 +103,37 @@ build helper: CXX_EXECUTABLE_LINKER__helper_Debug CMakeFiles/helper.dir/junchi/h
   TARGET_PDB = helper.dbg
 
 # =============================================================================
+# Object build statements for EXECUTABLE target linked_list
+
+
+#############################################
+# Order-only phony target for linked_list
+
+build cmake_object_order_depends_target_linked_list: phony || CMakeFiles/linked_list.dir
+
+build CMakeFiles/linked_list.dir/junchi/linked_list.cpp.o: CXX_COMPILER__linked_list_unscanned_Debug /Users/zhujunchi/Desktop/code_with_son/junchi/linked_list.cpp || cmake_object_order_depends_target_linked_list
+  DEP_FILE = CMakeFiles/linked_list.dir/junchi/linked_list.cpp.o.d
+  FLAGS = -g -std=gnu++14 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/linked_list.dir
+  OBJECT_FILE_DIR = CMakeFiles/linked_list.dir/junchi
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target linked_list
+
+
+#############################################
+# Link the executable linked_list
+
+build linked_list: CXX_EXECUTABLE_LINKER__linked_list_Debug CMakeFiles/linked_list.dir/junchi/linked_list.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk
+  OBJECT_DIR = CMakeFiles/linked_list.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = linked_list
+  TARGET_PDB = linked_list.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target day_one
 
 
@@ -132,6 +163,37 @@ build day_one: CXX_EXECUTABLE_LINKER__day_one_Debug CMakeFiles/day_one.dir/junch
   PRE_LINK = :
   TARGET_FILE = day_one
   TARGET_PDB = day_one.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target day_two
+
+
+#############################################
+# Order-only phony target for day_two
+
+build cmake_object_order_depends_target_day_two: phony || CMakeFiles/day_two.dir
+
+build CMakeFiles/day_two.dir/junchi/day_two.cpp.o: CXX_COMPILER__day_two_unscanned_Debug /Users/zhujunchi/Desktop/code_with_son/junchi/day_two.cpp || cmake_object_order_depends_target_day_two
+  DEP_FILE = CMakeFiles/day_two.dir/junchi/day_two.cpp.o.d
+  FLAGS = -g -std=gnu++14 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/day_two.dir
+  OBJECT_FILE_DIR = CMakeFiles/day_two.dir/junchi
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target day_two
+
+
+#############################################
+# Link the executable day_two
+
+build day_two: CXX_EXECUTABLE_LINKER__day_two_Debug CMakeFiles/day_two.dir/junchi/day_two.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk
+  OBJECT_DIR = CMakeFiles/day_two.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = day_two
+  TARGET_PDB = day_two.dbg
 
 
 #############################################
@@ -167,7 +229,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/zhujunchi/Desktop/code_with_son/cmake-build-debug
 
-build all: phony code_with_son_hanfu helper day_one
+build all: phony code_with_son_hanfu helper linked_list day_one day_two
 
 # =============================================================================
 # Built-in targets
