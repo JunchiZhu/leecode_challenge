@@ -3,10 +3,33 @@
 //
 
 #include "helper.cpp"
-
+#include "linked_list.cpp"
 using namespace std;
+// dummy -> a -> b -> c
+ListNode* reverseList(ListNode* head) {
+    ListNode* node=head;
+    ListNode* dummy_head= nullptr;
+    while(node!= nullptr){
+        ListNode* node_next=node->next;
+        node->next=dummy_head;
+        dummy_head=node;
+        node=node_next;
+    }
+    head=dummy_head;
+    return head;
+}
+
+ListNode* swapPairs(ListNode* head) {
+
+}
 
 int main(){
+    MyLinkedList *list=new MyLinkedList();
+    list->addAtIndex(0,10);
+    list->addAtIndex(0,20);
+    list->addAtIndex(1,30);
+    list->get(0);
+
     int num;
     cin>>num;
     vector<int> nums(num);

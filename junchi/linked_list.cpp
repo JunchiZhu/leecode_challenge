@@ -100,10 +100,3 @@ public:
         size-=1;
     }
 };
-int main(){
-    MyLinkedList *list=new MyLinkedList();
-    list->addAtIndex(0,10);
-    list->addAtIndex(0,20);
-    list->addAtIndex(1,30);
-    list->get(0);
-}
