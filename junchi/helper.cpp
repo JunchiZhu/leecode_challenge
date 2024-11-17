@@ -1,13 +1,9 @@
-//
-// Created by 朱俊驰 on 11/14/24.
-//
-#include "iostream"
-#include "vector"
-using namespace std;
+#include "helper.h"
+#include <iostream>
 
-void vector_printer(const vector<int>& print_vector){
-    for(auto element:print_vector){
-        cout<<element<<" ";
+void vector_printer(const std::vector<int>& print_vector) {
+    for (const auto& element : print_vector) {
+        std::cout << element << " ";
     }
-    cout<<endl;
+    std::cout << std::endl;
 }

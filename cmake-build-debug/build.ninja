@@ -195,6 +195,37 @@ build day_two: CXX_EXECUTABLE_LINKER__day_two_Debug CMakeFiles/day_two.dir/junch
   TARGET_FILE = day_two
   TARGET_PDB = day_two.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target day_three
+
+
+#############################################
+# Order-only phony target for day_three
+
+build cmake_object_order_depends_target_day_three: phony || CMakeFiles/day_three.dir
+
+build CMakeFiles/day_three.dir/junchi/day_three.cpp.o: CXX_COMPILER__day_three_unscanned_Debug /Users/zhujunchi/Desktop/code_with_son/junchi/day_three.cpp || cmake_object_order_depends_target_day_three
+  DEP_FILE = CMakeFiles/day_three.dir/junchi/day_three.cpp.o.d
+  FLAGS = -g -std=gnu++14 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/day_three.dir
+  OBJECT_FILE_DIR = CMakeFiles/day_three.dir/junchi
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target day_three
+
+
+#############################################
+# Link the executable day_three
+
+build day_three: CXX_EXECUTABLE_LINKER__day_three_Debug CMakeFiles/day_three.dir/junchi/day_three.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk
+  OBJECT_DIR = CMakeFiles/day_three.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = day_three
+  TARGET_PDB = day_three.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -229,7 +260,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/zhujunchi/Desktop/code_with_son/cmake-build-debug
 
-build all: phony code_with_son_hanfu helper linked_list day_one day_two
+build all: phony code_with_son_hanfu helper linked_list day_one day_two day_three
 
 # =============================================================================
 # Built-in targets
